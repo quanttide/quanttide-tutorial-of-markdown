@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'myst_markdown/README';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -328,6 +330,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="myst-markdown">
 <h1>MyST Markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h1>
+<p>MyST（Markedly Structured Text）是建立在CommonMark基础上的​​增强版Markdown​​，专为科学写作和技术文档设计，支持复杂内容如公式、交叉引用等。</p>
+<p>​​支持扩展语法​​：</p>
+<ul class="simple">
+<li><p>数学公式：<span class="math notranslate nohighlight">\(E=mc^2\)</span> 或块公式 $<span class="math notranslate nohighlight">\(...\)</span>$。</p></li>
+<li><p>交叉引用：{ref} 引用章节、图表。</p></li>
+<li><p>自定义指令：类似RST（reStructuredText），可嵌入交互式内容。
+​</p></li>
+</ul>
+<p>​用途​​：</p>
+<ul class="simple">
+<li><p>用于Jupyter Book、Sphinx等工具，编写技术手册、学术论文。</p></li>
+<li><p>适合需要公式、代码与文字混合排版的场景。
+​</p></li>
+</ul>
+<p>​示例​​：</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{math}
+E = mc^2
+```
+参见章节 {ref}`intro`。  
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
