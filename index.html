@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>简介 &#8212; 量潮示例文档项目</title>
+    <title>简介 &#8212; 量潮Markdown教程</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="示例章" href="1_example_chapter/README.html" />
+    <link rel="next" title="基础语法" href="basic/README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -150,7 +150,7 @@
   
   
   
-    <p class="title logo__title">量潮示例文档项目</p>
+    <p class="title logo__title">量潮Markdown教程</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -174,25 +174,10 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">示例部分</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="1_example_chapter/README.html">示例章</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="1_example_chapter/1_example_section/README.html">示例节1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_example_chapter/1_example_section/1_example_article.html">测试文章</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_example_chapter/1_example_section/1_example_article2.html">测试文章2</a></li>
-</ul>
-</details></li>
-<li class="toctree-l2"><a class="reference internal" href="1_example_chapter/2_example_article3.html">测试文章3</a></li>
-</ul>
-</details></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">示例部分2</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_example_chapter2/README.html">示例章2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_example_chapter2/1_example_section2/README.html">示例节2</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="3_example_chapter3/README.html">示例章2</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="basic/README.html">基础语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common_mark/README.html">CommonMark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="myst_markdown/README.html">MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -318,7 +303,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -334,6 +321,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">什么是Markdown？</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">如何轻松学会Markdown？</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -345,8 +341,28 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>简介<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<section id="markdown">
+<h2>什么是Markdown？<a class="headerlink" href="#markdown" title="Link to this heading">#</a></h2>
+<p>想象一下，你在网上写文章、记笔记，或者整理学习资料时，是不是经常需要调整格式？比如加粗标题、插入图片、列出要点，或者让代码看起来更清晰。如果用传统的文字处理软件（比如Word），你可能要点很多按钮才能完成这些操作。</p>
+<p>Markdown 就是一种让你<strong>用键盘快速排版</strong>的方法。它不需要复杂的工具栏，而是用一些简单的符号来告诉电脑哪些文字是标题、哪些要加粗、哪些是列表。比如：</p>
+<p>• 用 <code class="docutils literal notranslate"><span class="pre">#</span></code> 表示标题（<code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">一级标题</span></code>、<code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">二级标题</span></code>）。<br />
+• 用 <code class="docutils literal notranslate"><span class="pre">**</span></code> 包裹文字表示加粗（<code class="docutils literal notranslate"><span class="pre">**重点内容**</span></code>）。<br />
+• 用 <code class="docutils literal notranslate"><span class="pre">-</span></code> 或 <code class="docutils literal notranslate"><span class="pre">*</span></code> 开头表示列表项。</p>
+<p>它的最大好处是<strong>简单、通用</strong>。你可以在任何支持 Markdown 的地方使用它，比如 GitHub、博客平台、笔记软件（如 Typora、Notion），甚至微信排版工具。而且，因为它本质上是纯文本，所以文件很小，打开速度快，还能轻松转换成网页或PDF。</p>
+<p>简单来说，Markdown 就是让你<strong>像写纯文本一样轻松排版</strong>，省去反复调整格式的麻烦，特别适合写作业、记笔记、整理资料，甚至写简单的网页！</p>
+</section>
+<section id="id2">
+<h2>如何轻松学会Markdown？<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>如果你经常在网上写东西，可能会发现调整格式很麻烦——要加粗文字得用鼠标选来选去，想插入图片要点好几下按钮。Markdown就是为了解决这个问题而生的，它让你用几个简单的符号就能搞定排版。</p>
+<p>学习Markdown最好的办法就是<strong>直接动手写</strong>。你可以先记住几个最常用的符号：</p>
+<p>• 想写大标题？在文字前面加 <code class="docutils literal notranslate"><span class="pre">#</span></code>，比如 <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">这是标题</span></code><br />
+• 要加粗文字？用两个 <code class="docutils literal notranslate"><span class="pre">*</span></code> 包住它，像这样 <code class="docutils literal notranslate"><span class="pre">**重点内容**</span></code><br />
+• 列清单很简单，每行前面加 <code class="docutils literal notranslate"><span class="pre">-</span></code> 就行<br />
+• 插入链接和图片也很直观，<code class="docutils literal notranslate"><span class="pre">[文字](网址)</span></code> 是链接，<code class="docutils literal notranslate"><span class="pre">![描述](图片地址)</span></code> 是图片</p>
+<p>刚开始可能会记不住，没关系，网上随便搜”Markdown语法”就能找到速查表。</p>
+<p>等你用顺手了，就会发现Markdown比Word之类的软件方便多了——不用一直点来点去，双手不离键盘就能搞定所有格式。写作业、记笔记、发博客都能用，而且在哪里打开效果都一样。</p>
+<p>最重要的是别把它想得太复杂，就当是在学一种更高效的打字方式。试着用Markdown写一周笔记，保证你再也不想回去用传统排版了。</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -382,11 +398,11 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="1_example_chapter/README.html"
+       href="basic/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">示例章</p>
+        <p class="prev-next-title">基础语法</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -396,6 +412,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">什么是Markdown？</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">如何轻松学会Markdown？</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
